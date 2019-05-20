@@ -1,1 +1,1 @@
-https://github.com/Isihaaaa/weather-app.git
+https://isihaaaa.github.io/weather-app/
