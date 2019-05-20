@@ -2,7 +2,7 @@ import * as base from './base';
 import Search from './models/Search';
 import * as searchView from './view/searchView';
 import axios from 'axios';
-import { proxy,whereIAmApiUrl } from './config';
+import { proxy, whereIAmApiUrl } from './config';
 
 export const state = {};
 
@@ -29,11 +29,10 @@ const controlSerach = async () => {
 
             await state.search.getForecast();
             await state.search.locationName(state.search.latitude, state.search.longitude);
-            console.log(state);
 
             base.clearLoader();
 
-            await console.log(state, 'ez itt a state');
+            await console.log(state, 'van input value');
             //await console.log(state.search.forecast.data.hourly.data);
             searchView.renderCurrent(state.search.forecast);
             searchView.renderDailyResults(state.search.forecast.data.daily);
@@ -70,7 +69,7 @@ const controlSerach = async () => {
                     searchView.renderCurrent(state.search.forecast);
                     searchView.renderDailyResults(state.search.forecast.data.daily);
                     searchView.renderHourlyResults(state.search.forecast.data.hourly.data);
-                    console.log(state);
+                    console.log(state, 'nincs input value');
                 } catch (err) {
                     console.log(err);
                 }
@@ -99,4 +98,6 @@ base.elements.button.addEventListener('click', () => {
 });
 
 controlSerach();
+
+
 
