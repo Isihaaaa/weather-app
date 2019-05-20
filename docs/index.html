@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Weather App</title>
+</head>
+
+<body>
+  <!-- app -->
+  <div class="container" id="app">
+    <!-- header -->
+    <header class="header">
+
+      <!-- input -->
+      <div class="input-wrapper">
+        <input type="text" name="finder" class="finder" placeholder="Get your location" />
+
+        <button type="submit" class="btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+    </header>
+
+    <!-- main -->
+    <main class="weather-forecast">
+
+      <!-- current -->
+      <section class="weather-forecast__current">
+
+        <!-- slider -->
+        <div class="slider">
+
+          <div class="slider__arrow--left arrow-btn">
+            <i class="fas fa-chevron-left fa-4x"></i>
+          </div>
+
+          <div class="slider__content-wrapper">
+            <div class="slider__content">
+
+              <!----- card ----->
+              <div class="card">
+
+              </div>
+
+            </div>
+            <div class="slider__buble-wrapper">
+              <i class="fas fa-circle buble-btn"></i>
+              <i class="far fa-circle buble-btn"></i>
+              <i class="fas fa-circle buble-btn"></i>
+              <i class="fas fa-circle buble-btn"></i>
+              <i class="fas fa-circle buble-btn"></i>
+            </div>
+          </div>
+          <div class="slider__arrow--right arrow-btn">
+            <i class="fas fa-chevron-right fa-4x"></i>
+          </div>
+      </section>
+
+      <section class="weather-forecast__future">
+        <!-- daily -->
+        <div class="weather-forecast__future--daily">
+          <span class="heading-secondary">daily</span>
+          <ul class="list daily__list">
+
+
+            <!-- <li class="list__item">
+              <span class="list__item--heading">Mon</span>
+              <i class="list__item--icon fas fa-2x fa-sun"></i>
+              <span class="list__item--temperature">25 / 15 &#8451;</span>
+            </li> -->
+
+            <!-- <li class="list__item">
+              <span class="list__item--heading">Tue</span>
+              <i class="list__item--icon fas fa-2x fa-cloud-showers-heavy"></i>
+              <span class="list__item--temperature">25 / 8 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">Wed</span>
+              <i class="list__item--icon fas fa-2x fa-cloud"></i>
+              <span class="list__item--temperature">25 / 10 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">Thu</span>
+              <i class="list__item--icon fas fa-2x fa-sun"></i>
+              <span class="list__item--temperature">25 / 19 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">Fri</span>
+              <i class="list__item--icon fas fa-2x fa-cloud-sun-rain"></i>
+              <span class="list__item--temperature">25 / 12 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">Sat</span>
+              <i class="list__item--icon fas fa-2x fa-sun"></i>
+              <span class="list__item--temperature">25 / 20 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">Sun</span>
+              <i class="list__item--icon fas fa-2x fa-cloud-rain"></i>
+              <span class="list__item--temperature">25 / 11 &#8451;</span>
+            </li> -->
+          </ul>
+        </div>
+
+        <!-- hourly -->
+        <div class="weather-forecast__future--hourly">
+          <span class="heading-secondary">hourly</span>
+          <ul class="list hourly__list">
+
+            <!-- <li class="list__item">
+              <span class="list__item--heading">16:00</span> 
+              <i class="list__item--icon fas fa-2x fa-sun"></i>
+              <span class="list__item--temperature">15 &#8451;</span>
+            </li> -->
+
+            <!-- <li class="list__item">
+              <span class="list__item--heading">20:00</span>
+              <i class="list__item--icon fas fa-2x fa-cloud-showers-heavy"></i>
+              <span class="list__item--temperature">8 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">0:00</span>
+              <i class="list__item--icon fas fa-2x fa-cloud"></i>
+              <span class="list__item--temperature">10 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">4:00</span>
+              <i class="list__item--icon fas fa-2x fa-sun"></i>
+              <span class="list__item--temperature">19 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">8:00</span>
+              <i class="list__item--icon fas fa-2x fa-cloud-sun-rain"></i>
+              <span class="list__item--temperature">12 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">12:00</span>
+              <i class="list__item--icon fas fa-2x fa-sun"></i>
+              <span class="list__item--temperature">20 &#8451;</span>
+            </li>
+
+            <li class="list__item">
+              <span class="list__item--heading">16:00</span>
+              <i class="list__item--icon fas fa-2x fa-cloud-rain"></i>
+              <span class="list__item--temperature">11 &#8451;</span>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
